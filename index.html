@@ -1,9 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mentenanta, concurs infochim 2024</title>
+    <title>Site web </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #parallax {
+            background-image: url('https://wallpaperaccess.com/full/1591914.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            transition: left 0.3s ease;
+        }
+        
+        #menu.open {
+            left: 0;
+        }
+        
+        #content {
+            margin-top: 100vh;
+            padding: 20px;
+        }
+        
+        #toggle-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Mentenanta, concurs infochim 2024!</h1>
+<body bgcolor="green">
+    <div id="parallax"></div>
+    
+    <div id="menu">
+        <!-- Aici adăugați conținutul meniului -->
+    </div>
+    
+    <div id="content">
+        <!-- Aici adăugați conținutul paginii -->
+    </div>
+    
+    <div id="toggle-btn">&#9776;</div>
+    
+
+
+
+
+    
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const menu = document.getElementById('menu');
+        
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
