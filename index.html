@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    /* Restul stilurilor existente */
+
+    body {
+        cursor: url('calea_catre_imaginea_cursorului.cur'), auto;
+    }
+    
+</style>
     <title>Site web </title>
     <style>
         body {
@@ -16,19 +24,23 @@
             background-size: cover;
             height: 100vh;
         }
-        
         #menu {
             position: fixed;
             top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100vh;
+            left: 0;
+            width: 100%;
+            height: 50px; /* Modificați înălțimea meniului după preferințe */
             background-color: #333;
-            transition: left 0.3s ease;
+            z-index: 9999;
         }
         
-        #menu.open {
-            left: 0;
+        #menu a {
+            display: inline-block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
         }
         
         #content {
@@ -36,41 +48,25 @@
             padding: 20px;
         }
         
-        #toggle-btn {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            cursor: pointer;
-            color: #fff;
-            font-size: 24px;
-        }
+        /* Restul stilurilor existente */
+        
     </style>
 </head>
 <body bgcolor="green">
     <div id="parallax"></div>
     
-    <div id="menu">
-        <!-- Aici adăugați conținutul meniului -->
-    </div>
-    
     <div id="content">
         <!-- Aici adăugați conținutul paginii -->
     </div>
     
-    <div id="toggle-btn">&#9776;</div>
-    
-
-
-
-
+    <div id="menu">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+    </div>
     
     <script>
-        const toggleBtn = document.getElementById('toggle-btn');
-        const menu = document.getElementById('menu');
-        
-        toggleBtn.addEventListener('click', () => {
-            menu.classList.toggle('open');
-        });
+        // Restul codului JavaScript existent
     </script>
 </body>
 </html>
