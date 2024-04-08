@@ -1,23 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Site web</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combinație coduri</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-<body bgcolor="green">
-    <div id="parallax"></div>
+<body>
+  <!-- Cod HTML -->
+  <nav>
+    <h1>Menu</h1>
+    <ul>
+      <li>Acasă</li>
+      <li>1.Apa</li>
+      <li>1.1 Apa e buna</li>
+      <li>1.2 Apa e smechera</li>
+      <li>2.Aerul</li>
+      <li>2.1 Aerul e smecher</li>
+      <li>2.2 Aerul e bun</li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+        <div id="parallax"></div>
     
-    <div id="content">
-        <!-- Aici adăugați conținutul paginii -->
-    </div>
-    
-    <div id="menu">
-        <a href="#">curiozitati</a>
-        <a href="#">curiozitati2</a>
-        <h1>CHIMIA IN POLUARE</h1>
-        <a href="#">curiozitati3</a>
-        <a href="#">test</a>
-    </div>
+        <div id="content">
+            <!-- Aici adăugați conținutul paginii -->
+        </div>
+        
+     </section>
+  </main>
+
+
+
+
+
+  
+  <!-- Cod JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    (function() {
+
+      var nav = $('nav'),
+        menu = $('nav h1'),
+        main = $('main'),
+        open = false,
+        hover = false;
+
+      menu.on('click', function() {
+        open = !open;
+        nav.toggleClass('menu-active', open);
+        main.toggleClass('menu-active', open);
+        nav.removeClass('menu-hover');
+        main.removeClass('menu-hover');
+        console.log(open);
+      });
+      menu.hover( 
+        function() {
+          if (!open) {
+            nav.addClass('menu-hover');
+            main.addClass('menu-hover');
+          }
+        }, function() {
+          nav.removeClass('menu-hover');
+          main.removeClass('menu-hover');
+        }
+      );
+
+    })();
+  </script>
 </body>
 </html>
