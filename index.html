@@ -6,13 +6,14 @@
 <title>Combinație coduri</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+
 </head>
 <body>
   <!-- Cod HTML -->
   <nav>
     <h1>Menu</h1>
     <ul>
-      <li>Acasă</li>
+      <li><b>Acasă</b></li>
       <li>1.Apa</li>
       <li>1.1 Apa e buna</li>
       <li>1.2 Apa e smechera</li>
@@ -23,12 +24,15 @@
       </nav>
       <main>
         <section>
+          
         <div id="parallax"></div>
 
 
 
 
-
+        <div class="text-container">
+        <font size="5"> <h1>Poluarea in natura</h1></font>
+         <font size="5"><p>Poluarea a fost intotdeauna o problema.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in imperdiet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Ut venenatis ipsum a ultricies elementum. Etiam suscipit, mi sit amet ornare egestas, eros orci varius quam, nec sodales dui dui non nibh. Nunc dignissim accumsan magna, ac dictum quam ultricies in. </p>         </font> </div>
 
 
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -86,3 +90,325 @@
   </script>
 </body>
 </html>
+
+<!--  
+
+  COD CSS
+  /* Stiluri CSS */
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,200);
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    line-height: 1.7;
+    perspective-origin: 0% 50%;
+    perspective: 800px;
+    background: #21212D;
+}
+
+nav,
+main {
+    transition: transform 150ms ease-out;
+}
+
+nav {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16em;
+    background-color: #353441;
+    transform: translateX(-16em);
+}
+nav.menu-active {
+    transform: translateX(0);
+}
+nav.menu-hover {
+    transform: translateX(-15.5em);
+}
+nav h1 {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: .8em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #9DC6D1;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #353441;
+    cursor: pointer;
+}
+nav h1:hover {
+    color: #353441;
+    background: #fff;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    padding: 0 1em;
+    width: 100%;
+    height: 60px;
+    color: #9DC6D1;
+    line-height: 60px;
+    background-color: #353441;
+}
+li:nth-of-type(2n) {
+    background-color: lighten(#353441, 2%);
+}
+li:hover {
+    background: #fff;
+}
+
+main {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #9DC6D1;
+    transform-origin: 0% 50%;
+}
+main:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, rgba(#21212D, .5));
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 150ms ease-out, visibility 0s 150ms;
+}
+main.menu-active {
+    border-radius: .001px;
+    transform: translateX(16em) rotateY(15deg);
+}
+main.menu-active:after {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 150ms ease-out, visibility 0s;
+}
+main.menu-hover {
+    border-radius: .001px;
+    transform: translateX(1em) rotateY(1deg);
+}
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+section h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+section p {
+    display: inline-block;
+    margin: 16px 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+#parallax {
+    background-image: url('https://wallpaperaccess.com/full/1591914.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5%;
+    overflow-y: auto; 
+    overflow-x: auto; 
+    white-space: nowrap;
+    background-color: #333;
+    z-index: 9999;
+    display: flex; /* Adăugat pentru a alinia elementele pe orizontală */
+    align-items: center; /* Adăugat pentru a alinia elementele pe verticală */
+    justify-content: center; /* Adăugat pentru a alinia elementele pe orizontală */
+
+}
+#menu a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+#content {
+    margin-top: 100vh;
+    padding: 20px;
+    position: relative;
+    z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+-->
