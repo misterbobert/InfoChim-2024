@@ -1,415 +1,415 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Combinație coduri</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinație coduri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #b9b3a9;
-  display: flex;
-  justify-content: center;
-}
+    body {
+    font-family: 'Poppins', sans-serif;
+    background: #b9b3a9;
+    display: flex;
+    justify-content: center;
+    }
 
-.container1 {
-  width: 450px;
-  padding: 20px;
-  margin-top: 80px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-}
+    .container1 {
+    width: 450px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    }
 
-h1 {
-  text-align: center;
-}
+    h1 {
+    text-align: center;
+    }
 
-.question {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
+    .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
 
-.options {
-  margin-bottom: 20px;
-}
+    .options {
+    margin-bottom: 20px;
+    }
 
-.option {
-  display: block;
-  margin-bottom: 10px;
-}
+    .option {
+    display: block;
+    margin-bottom: 10px;
+    }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #428bca;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  margin-right: 10px;
-}
+    .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    }
 
-.button:hover {
-  background-color: #3071a9;
-}
+    .button:hover {
+    background-color: #3071a9;
+    }
 
-.result {
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
-}
+    .result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    }
 
-.hide{
-  display: none;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="modif.scss">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</head>
-<body onload="NextQuestion(0)">
-    <!-- Cod HTML -->
-    <nav>
-        <h1>Menu</h1>
-        <ul>
-            
-            <a href="index.html">
-                <div>
-            <li>Acasă</li>
-                </div>
-                </a>
-
-            <a href="aerul.html">
-            <div>
-            <li><b>1.Aerul</b></li>
-            </div>
-            </a>
-        
-            <a href="#">
-            <div>
-            <li>1.1 Apa e buna</li>
-            </div>
-            </a> 
-
-            <a href="#">
-            <div>
-                <li>1.2 Apa e smechera</li>
-            </div>
-            </a>
-            
-            <a href="#">
-            <div>
-                <li>2.Aerul</li>
-            </div>
-            </a>
-
-            <a href="#">
-            <div>
-                <li>2.1 Aerul e smecher</li>
-            </div>
-            </a>
-            
-            <a href="#">
-            <div>
-                <li>2.2 Aerul e bun</li>
-            </div>
-            </a>
-
-            
-            </nav>
-            <main>
-                <section>
-                    
-                
-                 <br><br>
-                            
-                 <div class="container1" style="
-                 margin: auto;
-                 width: 50%;
-                 border: 3px solid green;
-                 padding: 10px;">
-                    <h1>Quiz App</h1>
-                    <div id="quiz"></div>
-                    <div id="result" class="result"></div>
-                    <button id="submit" class="button">Submit</button>
-                    <button id="retry" class="button hide">Retry</button>
-                    <button id="showAnswer" class="button hide">Show Answer</button>
-                  </div>
-
-
-<br><br><br><br><br><br><br><br><br>><br><br><br><br><br>
-                <footer class="footer">
-                    
-                    <div class="waves">
-                        <div class="wave" id="wave1"></div>
-                        <div class="wave" id="wave2"></div>
-                        <div class="wave" id="wave3"></div>
-                        <div class="wave" id="wave4"></div>
-                    </div>
-                    
-                 
-                    <p>&copy;2024 Constantin Robert || All rights reserved</p>
-                </footer>
-                
-                 </section>
-            </main>
-
-
-    
-    <!-- Cod JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        (function() {
-
-            var nav = $('nav'),
-                menu = $('nav h1'),
-                main = $('main'),
-                open = false,
-                hover = false;
-
-            menu.on('click', function() {
-                open = !open;
-                nav.toggleClass('menu-active', open);
-                main.toggleClass('menu-active', open);
-                nav.removeClass('menu-hover');
-                main.removeClass('menu-hover');
-                console.log(open);
-            });
-            menu.hover( 
-                function() {
-                    if (!open) {
-                        nav.addClass('menu-hover');
-                        main.addClass('menu-hover');
-                    }
-                }, function() {
-                    nav.removeClass('menu-hover');
-                    main.removeClass('menu-hover');
-                }
-            );
-
-        })();
-    </script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    .hide{
+    display: none;
+    }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="modif.scss">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body onload="NextQuestion(0)">
+        <!-- Cod HTML -->
+        <nav>
+            <h1>Menu</h1>
+            <ul>
+                
+                <a href="index.html">
+                    <div>
+                <li>Acasă</li>
+                    </div>
+                    </a>
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+                <a href="aerul.html">
+                <div>
+                <li><b>1.Aerul</b></li>
+                </div>
+                </a>
+            
+                <a href="#">
+                <div>
+                <li>1.1 Apa e buna</li>
+                </div>
+                </a> 
+
+                <a href="#">
+                <div>
+                    <li>1.2 Apa e smechera</li>
+                </div>
+                </a>
+                
+                <a href="#">
+                <div>
+                    <li>2.Aerul</li>
+                </div>
+                </a>
+
+                <a href="#">
+                <div>
+                    <li>2.1 Aerul e smecher</li>
+                </div>
+                </a>
+                
+                <a href="#">
+                <div>
+                    <li>2.2 Aerul e bun</li>
+                </div>
+                </a>
+
+                
+                </nav>
+                <main>
+                    <section>
+                        
+                    
+                    <br><br>
+                                
+                    <div class="container1" style="
+                    margin: auto;
+                    width: 50%;
+                    border: 3px solid green;
+                    padding: 10px;">
+                        <h1>Quiz App</h1>
+                        <div id="quiz"></div>
+                        <div id="result" class="result"></div>
+                        <button id="submit" class="button">Submit</button>
+                        <button id="retry" class="button hide">Retry</button>
+                        <button id="showAnswer" class="button hide">Show Answer</button>
+                    </div>
+
+
+    <br><br><br><br><br><br><br><br><br>><br><br><br><br><br>
+                    <footer class="footer">
+                        
+                        <div class="waves">
+                            <div class="wave" id="wave1"></div>
+                            <div class="wave" id="wave2"></div>
+                            <div class="wave" id="wave3"></div>
+                            <div class="wave" id="wave4"></div>
+                        </div>
+                        
+                    
+                        <p>&copy;2024 Constantin Robert || All rights reserved</p>
+                    </footer>
+                    
+                    </section>
+                </main>
+
+
         
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
-        <script>const quizData = [
-            {
-              question: 'What is the capital of France?',
-              options: ['Paris', 'London', 'Berlin', 'Madrid'],
-              answer: 'Paris',
-            },
-            {
-              question: 'What is the largest planet in our solar system?',
-              options: ['Mars', 'Saturn', 'Jupiter', 'Neptune'],
-              answer: 'Jupiter',
-            },
-            {
-              question: 'Which country won the FIFA World Cup in 2018?',
-              options: ['Brazil', 'Germany', 'France', 'Argentina'],
-              answer: 'France',
-            },
-            {
-              question: 'What is the tallest mountain in the world?',
-              options: ['Mount Everest', 'K2', 'Kangchenjunga', 'Makalu'],
-              answer: 'Mount Everest',
-            },
-            {
-              question: 'Which is the largest ocean on Earth?',
-              options: [
-                'Pacific Ocean',
-                'Indian Ocean',
-                'Atlantic Ocean',
-                'Arctic Ocean',
-              ],
-              answer: 'Pacific Ocean',
-            },
-            {
-              question: 'What is the chemical symbol for gold?',
-              options: ['Au', 'Ag', 'Cu', 'Fe'],
-              answer: 'Au',
-            },
-            {
-              question: 'Who painted the Mona Lisa?',
-              options: [
-                'Pablo Picasso',
-                'Vincent van Gogh',
-                'Leonardo da Vinci',
-                'Michelangelo',
-              ],
-              answer: 'Leonardo da Vinci',
-            },
-            {
-              question: 'Which planet is known as the Red Planet?',
-              options: ['Mars', 'Venus', 'Mercury', 'Uranus'],
-              answer: 'Mars',
-            },
-            {
-              question: 'What is the largest species of shark?',
-              options: [
-                'Great White Shark',
-                'Whale Shark',
-                'Tiger Shark',
-                'Hammerhead Shark',
-              ],
-              answer: 'Whale Shark',
-            },
-            {
-              question: 'Which animal is known as the King of the Jungle?',
-              options: ['Lion', 'Tiger', 'Elephant', 'Giraffe'],
-              answer: 'Lion',
-            },
-          ];
-          
-          const quizContainer = document.getElementById('quiz');
-          const resultContainer = document.getElementById('result');
-          const submitButton = document.getElementById('submit');
-          const retryButton = document.getElementById('retry');
-          const showAnswerButton = document.getElementById('showAnswer');
-          
-          let currentQuestion = 0;
-          let score = 0;
-          let incorrectAnswers = [];
-          
-          function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-              const j = Math.floor(Math.random() * (i + 1));
-              [array[i], array[j]] = [array[j], array[i]];
-            }
-          }
-          
-          function displayQuestion() {
-            const questionData = quizData[currentQuestion];
-          
-            const questionElement = document.createElement('div');
-            questionElement.className = 'question';
-            questionElement.innerHTML = questionData.question;
-          
-            const optionsElement = document.createElement('div');
-            optionsElement.className = 'options';
-          
-            const shuffledOptions = [...questionData.options];
-            shuffleArray(shuffledOptions);
-          
-            for (let i = 0; i < shuffledOptions.length; i++) {
-              const option = document.createElement('label');
-              option.className = 'option';
-          
-              const radio = document.createElement('input');
-              radio.type = 'radio';
-              radio.name = 'quiz';
-              radio.value = shuffledOptions[i];
-          
-              const optionText = document.createTextNode(shuffledOptions[i]);
-          
-              option.appendChild(radio);
-              option.appendChild(optionText);
-              optionsElement.appendChild(option);
-            }
-          
-            quizContainer.innerHTML = '';
-            quizContainer.appendChild(questionElement);
-            quizContainer.appendChild(optionsElement);
-          }
-          
-          function checkAnswer() {
-            const selectedOption = document.querySelector('input[name="quiz"]:checked');
-            if (selectedOption) {
-              const answer = selectedOption.value;
-              if (answer === quizData[currentQuestion].answer) {
-                score++;
-              } else {
-                incorrectAnswers.push({
-                  question: quizData[currentQuestion].question,
-                  incorrectAnswer: answer,
-                  correctAnswer: quizData[currentQuestion].answer,
+        <!-- Cod JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            (function() {
+
+                var nav = $('nav'),
+                    menu = $('nav h1'),
+                    main = $('main'),
+                    open = false,
+                    hover = false;
+
+                menu.on('click', function() {
+                    open = !open;
+                    nav.toggleClass('menu-active', open);
+                    main.toggleClass('menu-active', open);
+                    nav.removeClass('menu-hover');
+                    main.removeClass('menu-hover');
+                    console.log(open);
                 });
-              }
-              currentQuestion++;
-              selectedOption.checked = false;
-              if (currentQuestion < quizData.length) {
+                menu.hover( 
+                    function() {
+                        if (!open) {
+                            nav.addClass('menu-hover');
+                            main.addClass('menu-hover');
+                        }
+                    }, function() {
+                        nav.removeClass('menu-hover');
+                        main.removeClass('menu-hover');
+                    }
+                );
+
+            })();
+        </script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+            }
+            </script>
+            <script>const quizData = [
+                {
+                question: 'What is the capital of France?',
+                options: ['Paris', 'London', 'Berlin', 'Madrid'],
+                answer: 'Paris',
+                },
+                {
+                question: 'What is the largest planet in our solar system?',
+                options: ['Mars', 'Saturn', 'Jupiter', 'Neptune'],
+                answer: 'Jupiter',
+                },
+                {
+                question: 'Which country won the FIFA World Cup in 2018?',
+                options: ['Brazil', 'Germany', 'France', 'Argentina'],
+                answer: 'France',
+                },
+                {
+                question: 'What is the tallest mountain in the world?',
+                options: ['Mount Everest', 'K2', 'Kangchenjunga', 'Makalu'],
+                answer: 'Mount Everest',
+                },
+                {
+                question: 'Which is the largest ocean on Earth?',
+                options: [
+                    'Pacific Ocean',
+                    'Indian Ocean',
+                    'Atlantic Ocean',
+                    'Arctic Ocean',
+                ],
+                answer: 'Pacific Ocean',
+                },
+                {
+                question: 'What is the chemical symbol for gold?',
+                options: ['Au', 'Ag', 'Cu', 'Fe'],
+                answer: 'Au',
+                },
+                {
+                question: 'Who painted the Mona Lisa?',
+                options: [
+                    'Pablo Picasso',
+                    'Vincent van Gogh',
+                    'Leonardo da Vinci',
+                    'Michelangelo',
+                ],
+                answer: 'Leonardo da Vinci',
+                },
+                {
+                question: 'Which planet is known as the Red Planet?',
+                options: ['Mars', 'Venus', 'Mercury', 'Uranus'],
+                answer: 'Mars',
+                },
+                {
+                question: 'What is the largest species of shark?',
+                options: [
+                    'Great White Shark',
+                    'Whale Shark',
+                    'Tiger Shark',
+                    'Hammerhead Shark',
+                ],
+                answer: 'Whale Shark',
+                },
+                {
+                question: 'Which animal is known as the King of the Jungle?',
+                options: ['Lion', 'Tiger', 'Elephant', 'Giraffe'],
+                answer: 'Lion',
+                },
+            ];
+            
+            const quizContainer = document.getElementById('quiz');
+            const resultContainer = document.getElementById('result');
+            const submitButton = document.getElementById('submit');
+            const retryButton = document.getElementById('retry');
+            const showAnswerButton = document.getElementById('showAnswer');
+            
+            let currentQuestion = 0;
+            let score = 0;
+            let incorrectAnswers = [];
+            
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+                }
+            }
+            
+            function displayQuestion() {
+                const questionData = quizData[currentQuestion];
+            
+                const questionElement = document.createElement('div');
+                questionElement.className = 'question';
+                questionElement.innerHTML = questionData.question;
+            
+                const optionsElement = document.createElement('div');
+                optionsElement.className = 'options';
+            
+                const shuffledOptions = [...questionData.options];
+                shuffleArray(shuffledOptions);
+            
+                for (let i = 0; i < shuffledOptions.length; i++) {
+                const option = document.createElement('label');
+                option.className = 'option';
+            
+                const radio = document.createElement('input');
+                radio.type = 'radio';
+                radio.name = 'quiz';
+                radio.value = shuffledOptions[i];
+            
+                const optionText = document.createTextNode(shuffledOptions[i]);
+            
+                option.appendChild(radio);
+                option.appendChild(optionText);
+                optionsElement.appendChild(option);
+                }
+            
+                quizContainer.innerHTML = '';
+                quizContainer.appendChild(questionElement);
+                quizContainer.appendChild(optionsElement);
+            }
+            
+            function checkAnswer() {
+                const selectedOption = document.querySelector('input[name="quiz"]:checked');
+                if (selectedOption) {
+                const answer = selectedOption.value;
+                if (answer === quizData[currentQuestion].answer) {
+                    score++;
+                } else {
+                    incorrectAnswers.push({
+                    question: quizData[currentQuestion].question,
+                    incorrectAnswer: answer,
+                    correctAnswer: quizData[currentQuestion].answer,
+                    });
+                }
+                currentQuestion++;
+                selectedOption.checked = false;
+                if (currentQuestion < quizData.length) {
+                    displayQuestion();
+                } else {
+                    displayResult();
+                }
+                }
+            }
+            
+            function displayResult() {
+                quizContainer.style.display = 'none';
+                submitButton.style.display = 'none';
+                retryButton.style.display = 'inline-block';
+                showAnswerButton.style.display = 'inline-block';
+                resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
+            }
+            
+            function retryQuiz() {
+                currentQuestion = 0;
+                score = 0;
+                incorrectAnswers = [];
+                quizContainer.style.display = 'block';
+                submitButton.style.display = 'inline-block';
+                retryButton.style.display = 'none';
+                showAnswerButton.style.display = 'none';
+                resultContainer.innerHTML = '';
                 displayQuestion();
-              } else {
-                displayResult();
-              }
             }
-          }
-          
-          function displayResult() {
-            quizContainer.style.display = 'none';
-            submitButton.style.display = 'none';
-            retryButton.style.display = 'inline-block';
-            showAnswerButton.style.display = 'inline-block';
-            resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
-          }
-          
-          function retryQuiz() {
-            currentQuestion = 0;
-            score = 0;
-            incorrectAnswers = [];
-            quizContainer.style.display = 'block';
-            submitButton.style.display = 'inline-block';
-            retryButton.style.display = 'none';
-            showAnswerButton.style.display = 'none';
-            resultContainer.innerHTML = '';
-            displayQuestion();
-          }
-          
-          function showAnswer() {
-            quizContainer.style.display = 'none';
-            submitButton.style.display = 'none';
-            retryButton.style.display = 'inline-block';
-            showAnswerButton.style.display = 'none';
-          
-            let incorrectAnswersHtml = '';
-            for (let i = 0; i < incorrectAnswers.length; i++) {
-              incorrectAnswersHtml += `
-                <p>
-                  <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
-                  <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
-                  <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
-                </p>
-              `;
+            
+            function showAnswer() {
+                quizContainer.style.display = 'none';
+                submitButton.style.display = 'none';
+                retryButton.style.display = 'inline-block';
+                showAnswerButton.style.display = 'none';
+            
+                let incorrectAnswersHtml = '';
+                for (let i = 0; i < incorrectAnswers.length; i++) {
+                incorrectAnswersHtml += `
+                    <p>
+                    <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
+                    <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
+                    <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
+                    </p>
+                `;
+                }
+            
+                resultContainer.innerHTML = `
+                <p>You scored ${score} out of ${quizData.length}!</p>
+                <p>Incorrect Answers:</p>
+                ${incorrectAnswersHtml}
+                `;
             }
-          
-            resultContainer.innerHTML = `
-              <p>You scored ${score} out of ${quizData.length}!</p>
-              <p>Incorrect Answers:</p>
-              ${incorrectAnswersHtml}
-            `;
-          }
-          
-          submitButton.addEventListener('click', checkAnswer);
-          retryButton.addEventListener('click', retryQuiz);
-          showAnswerButton.addEventListener('click', showAnswer);
-          
-          displayQuestion();</script>
-</body>
-</html>
+            
+            submitButton.addEventListener('click', checkAnswer);
+            retryButton.addEventListener('click', retryQuiz);
+            showAnswerButton.addEventListener('click', showAnswer);
+            
+            displayQuestion();</script>
+    </body>
+    </html>
