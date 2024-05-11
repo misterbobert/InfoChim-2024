@@ -16,6 +16,7 @@ body {
     perspective-origin: 0% 50%;
     perspective: 800px;
     background: #21212D;
+    
     height: 100%;
 }
 
