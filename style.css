@@ -352,10 +352,11 @@ table {
   width: 100%;
 }  
 .accordion {
-  background-color: #eee;
+  background-color: rgb(180, 180, 180);
   color: #444;
   cursor: pointer;
   width: 100%;
+  border-radius: 8px 8px 0px 0px;
   border: none;
   text-align: left;
   outline: none;
@@ -381,8 +382,11 @@ table {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(180, 180, 180);
   max-height: 0;
+  border-radius: 0px 0px 8px 8px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+
