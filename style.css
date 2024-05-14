@@ -310,11 +310,6 @@ section p {
 }
 
     .text-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        
-        transform: translate(-50%, -50%);
         background-color: rgba(197, 197, 197, 0.7); /* Set background color with less transparency */
         color: rgb(0, 0, 0);
         min-width: 75%;
