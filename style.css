@@ -312,12 +312,12 @@ section p {
     .text-container {
         position: absolute;
         top: 50%;
-        left: 76%;
-        padding: 500 px;
+        left: 50%;
+        
         transform: translate(-50%, -50%);
-        background-color: rgba(124, 123, 123, 0.7); /* Set background color with less transparency */
-        color: white;
-        min-width: 30%;
+        background-color: rgba(197, 197, 197, 0.7); /* Set background color with less transparency */
+        color: rgb(0, 0, 0);
+        min-width: 75%;
         min-height: 75%;
         padding: 20px;
         text-align: center;
