@@ -18,10 +18,7 @@ body {
     background: #21212D;
     
     height: 100%;
-}
-::-webkit-scrollbar {
-  display: none;
-}
+} 
 nav,
 main {
     transition: transform 150ms ease-out;
