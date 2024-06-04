@@ -6,66 +6,7 @@
 <title>Combinație coduri</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-<style>
-    
  
-
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
-.container1 {
-width: 450px;
-padding: 20px;
-margin-top: 80px;
-background-color: #fff;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-border-radius: 20px;
-}
-
-h1 {
-text-align: center;
-}
-
-.question {
-font-weight: bold;
-margin-bottom: 10px;
-}
-
-.options {
-margin-bottom: 20px;
-}
-
-.option {
-display: block;
-margin-bottom: 10px;
-}
-
-.button {
-display: inline-block;
-padding: 10px 20px;
-background-color: #428bca;
-color: #fff;
-border: none;
-cursor: pointer;
-font-size: 16px;
-border-radius: 4px;
-transition: background-color 0.3s;
-margin-right: 10px;
-}
-
-.button:hover {
-background-color: #3071a9;
-}
-
-.result {
-text-align: center;
-margin-top: 20px;
-font-weight: bold;
-}
-
-.hide{
-display: none;
-}
-</style>
 <style>@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="modif.scss">
@@ -285,18 +226,20 @@ font-family: 'Arial', sans-serif; ">
           </div>
           
   </div></div><br>
-  <div class="container1" style="
-  margin: auto;
-  width: 50%;
-  border: 3px solid rgb(38, 0, 175);
- ">
-      <h1>Test</h1>
-      <div id="quiz"></div>
-      <div id="result" class="result"></div>
-      <button id="submit" class="button">Trimite</button>
-      <button id="retry" class="button hide">Reia testul</button>
-      <button id="showAnswer" class="button hide">Rezultate</button>
-  </div>
+
+  <font size="5">  <div class="container1" style="
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(38, 0, 175);
+   ">
+        <h1>Test</h1>
+        <div id="quiz"></div>
+        <div id="result" class="result"></div>
+        <button id="submit" class="button">Trimite</button>
+        <button id="retry" class="button hide">Reia testul</button>
+        <button id="showAnswer" class="button hide">Rezultate</button>
+    </div></font>
+
 <br><br>
  
 
@@ -389,213 +332,212 @@ font-family: 'Arial', sans-serif; ">
             }
             </script>
             
-    <script>
-        const quizData = [
-            {
-                question: 'Ce este poluarea aerului?',
-                options: ['Contaminarea apei cu substanțe chimice', 'Prezența substanțelor nocive în aer', 'Încălzirea globală cauzată de defrișări', 'Emisiile sonore excesive'],
-                answer: 'Prezența substanțelor nocive în aer',
-            },
-            {
-                question: 'Care dintre următoarele este o sursă principală de poluare a aerului în orașe?',
-                options: ['Defrișările', 'Agricultura', 'Traficul rutier', 'Pescuitul excesiv'],
-                answer: 'Traficul rutier',
-            },
-            {
-                question: 'Ce gaz produs de mașini contribuie la formarea smogului?',
-                options: ['Dioxid de carbon (CO2)', 'Metan (CH4)', 'Monoxid de carbon (CO)', 'Dioxid de sulf (SO2)'],
-                answer: 'Monoxid de carbon (CO)',
-            },
-            {
-                question: 'Ce efect are poluarea aerului asupra sănătății umane?',
-                options: ['Crește imunitatea', 'Îmbunătățește capacitatea pulmonară', 'Poate cauza boli respiratorii și cardiovasculare', 'Ajută la digestie'],
-                answer: 'Poate cauza boli respiratorii și cardiovasculare',
-            },
-            {
-                question: 'Ce este smogul fotochemical?',
-                options: [
-                    'Un tip de poluare a apei',
-                    'Un amestec de fum și ceață produs de fabrici',
-                    'Un tip de smog format prin reacții chimice în prezența luminii solare',
-                    'O ceață densă din regiunile muntoase',
-                ],
-                answer: 'Un tip de smog format prin reacții chimice în prezența luminii solare',
-            },
-            {
-                question: 'Care dintre următoarele nu este un poluant atmosferic comun?',
-                options: ['Oxizi de azot (NOx)', 'Particule în suspensie (PM)', 'Dioxid de carbon (CO2)', 'Oxigen (O2)'],
-                answer: 'Oxigen (O2)',
-            },
-            {
-                question: 'Ce este indicele de calitate a aerului (AQI)?',
-                options: [
-                    'O măsură a nivelului de poluare a apei',
-                    'O unitate de măsură pentru temperatura aerului',
-                    'Un indicator al nivelului de poluare a aerului și al efectelor asupra sănătății',
-                    'O măsură a umidității aerului',
-                ],
-                answer: 'Un indicator al nivelului de poluare a aerului și al efectelor asupra sănătății',
-            },
-            {
-                question: 'Ce fenomen natural poate agrava poluarea aerului într-o zonă urbană?',
-                options: ['Ploaia torențială', 'Vânturile puternice', 'Inversiunea termică', 'Activitatea seismică'],
-                answer: 'Inversiunea termică',
-            },
-            {
-                question: 'Care dintre următoarele măsuri poate reduce poluarea aerului?',
-                options: [
-                    'Creșterea utilizării combustibililor fosili',
-                    'Promovarea transportului public și a bicicletelor',
-                    'Defrișarea pădurilor pentru extinderea orașelor',
-                    'Creșterea numărului de centrale pe cărbune',
-                ],
-                answer: 'Promovarea transportului public și a bicicletelor',
-            },
-            {
-                question: 'Ce poluant este principalul responsabil pentru ploaia acidă?',
-                options: ['Dioxid de carbon (CO2)', 'Metan (CH4)', 'Dioxid de sulf (SO2)', 'Oxigen (O2)'],
-                answer: 'Dioxid de sulf (SO2)',
-            },
-        ];
-        const quizContainer = document.getElementById('quiz');
-        const resultContainer = document.getElementById('result');
-        const submitButton = document.getElementById('submit');
-        const retryButton = document.getElementById('retry');
-        const showAnswerButton = document.getElementById('showAnswer');
+            <script>
+                const quizData = [
+                    {
+                        question: 'Ce este poluarea aerului?',
+                        options: ['Contaminarea apei cu substanțe chimice', 'Prezența substanțelor nocive în aer', 'Încălzirea globală cauzată de defrișări', 'Emisiile sonore excesive'],
+                        answer: 'Prezența substanțelor nocive în aer',
+                    },
+                    {
+                        question: 'Care dintre următoarele este o sursă principală de poluare a aerului în orașe?',
+                        options: ['Defrișările', 'Agricultura', 'Traficul rutier', 'Pescuitul excesiv'],
+                        answer: 'Traficul rutier',
+                    },
+                    {
+                        question: 'Ce gaz produs de mașini contribuie la formarea smogului?',
+                        options: ['Dioxid de carbon (CO2)', 'Metan (CH4)', 'Monoxid de carbon (CO)', 'Dioxid de sulf (SO2)'],
+                        answer: 'Monoxid de carbon (CO)',
+                    },
+                    {
+                        question: 'Ce efect are poluarea aerului asupra sănătății umane?',
+                        options: ['Crește imunitatea', 'Îmbunătățește capacitatea pulmonară', 'Poate cauza boli respiratorii și cardiovasculare', 'Ajută la digestie'],
+                        answer: 'Poate cauza boli respiratorii și cardiovasculare',
+                    },
+                    {
+                        question: 'Ce este smogul fotochemical?',
+                        options: [
+                            'Un tip de poluare a apei',
+                            'Un amestec de fum și ceață produs de fabrici',
+                            'Un tip de smog format prin reacții chimice în prezența luminii solare',
+                            'O ceață densă din regiunile muntoase',
+                        ],
+                        answer: 'Un tip de smog format prin reacții chimice în prezența luminii solare',
+                    },
+                    {
+                        question: 'Care dintre următoarele nu este un poluant atmosferic comun?',
+                        options: ['Oxizi de azot (NOx)', 'Particule în suspensie (PM)', 'Dioxid de carbon (CO2)', 'Oxigen (O2)'],
+                        answer: 'Oxigen (O2)',
+                    },
+                    {
+                        question: 'Ce este indicele de calitate a aerului (AQI)?',
+                        options: [
+                            'O măsură a nivelului de poluare a apei',
+                            'O unitate de măsură pentru temperatura aerului',
+                            'Un indicator al nivelului de poluare a aerului și al efectelor asupra sănătății',
+                            'O măsură a umidității aerului',
+                        ],
+                        answer: 'Un indicator al nivelului de poluare a aerului și al efectelor asupra sănătății',
+                    },
+                    {
+                        question: 'Ce fenomen natural poate agrava poluarea aerului într-o zonă urbană?',
+                        options: ['Ploaia torențială', 'Vânturile puternice', 'Inversiunea termică', 'Activitatea seismică'],
+                        answer: 'Inversiunea termică',
+                    },
+                    {
+                        question: 'Care dintre următoarele măsuri poate reduce poluarea aerului?',
+                        options: [
+                            'Creșterea utilizării combustibililor fosili',
+                            'Promovarea transportului public și a bicicletelor',
+                            'Defrișarea pădurilor pentru extinderea orașelor',
+                            'Creșterea numărului de centrale pe cărbune',
+                        ],
+                        answer: 'Promovarea transportului public și a bicicletelor',
+                    },
+                    {
+                        question: 'Care dintre următoarele este un poluant atmosferic major produs de autovehicule??',
+                        options: ['Dioxid de carbon (CO2)', 'Metan (CH4)', 'Monoxid de carbon (CO)', 'Oxigen (O2)'],
+                        answer: 'Monoxid de carbon (CO)',
+                    },
+                ];
+            
+                const quizContainer = document.getElementById('quiz');
+const resultContainer = document.getElementById('result');
+const submitButton = document.getElementById('submit');
+const retryButton = document.getElementById('retry');
+const showAnswerButton = document.getElementById('showAnswer');
 
-        let currentQuestion = 0;
-        let score = 0;
-        let incorrectAnswers = [];
+let currentQuestion = 0;
+let score = 0;
+let incorrectAnswers = [];
 
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
-        function displayQuestion() {
-            const questionData = quizData[currentQuestion];
+function displayQuestion() {
+    const questionData = quizData[currentQuestion];
 
-            const questionElement = document.createElement('div');
-            questionElement.className = 'question';
-            questionElement.innerHTML = questionData.question;
+    const questionElement = document.createElement('div');
+    questionElement.className = 'question';
+    questionElement.innerHTML = questionData.question;
 
-            const optionsElement = document.createElement('div');
-            optionsElement.className = 'options';
+    const optionsElement = document.createElement('div');
+    optionsElement.className = 'options';
 
-            const shuffledOptions = [...questionData.options];
-            shuffleArray(shuffledOptions);
+    const shuffledOptions = [...questionData.options];
+    shuffleArray(shuffledOptions);
 
-            for (let i = 0; i < shuffledOptions.length; i++) {
-                const option = document.createElement('label');
-                option.className = 'option';
+    for (let i = 0; i < shuffledOptions.length; i++) {
+        const option = document.createElement('label');
+        option.className = 'option';
 
-                const radio = document.createElement('input');
-                radio.type = 'radio';
-                radio.name = 'quiz';
-                radio.value = shuffledOptions[i];
+        const radio = document.createElement('input');
+        radio.type = 'radio';
+        radio.name = 'quiz';
+        radio.value = shuffledOptions[i];
 
-                const optionText = document.createTextNode(shuffledOptions[i]);
+        const optionText = document.createTextNode(shuffledOptions[i]);
 
-                option.appendChild(radio);
-                option.appendChild(optionText);
-                optionsElement.appendChild(option);
-            }
+        option.appendChild(radio);
+        option.appendChild(optionText);
+        optionsElement.appendChild(option);
+    }
 
-            quizContainer.innerHTML = '';
-            quizContainer.appendChild(questionElement);
-            quizContainer.appendChild(optionsElement);
-        }
+    quizContainer.innerHTML = '';
+    quizContainer.appendChild(questionElement);
+    quizContainer.appendChild(optionsElement);
+}
 
-        function checkAnswer() {
-            const selectedOption = document.querySelector('input[name="quiz"]:checked');
-            if (selectedOption) {
-                const answer = selectedOption.value;
-                const correctAnswer = quizData[currentQuestion].answer;
+function checkAnswer() {
+    const selectedOption = document.querySelector('input[name="quiz"]:checked');
+    if (selectedOption) {
+        const answer = selectedOption.value;
+        const correctAnswer = quizData[currentQuestion].answer;
 
-                if (answer === correctAnswer) {
-                    score++;
-                } else {
-                    incorrectAnswers.push({
-                        question: quizData[currentQuestion].question,
-                        incorrectAnswer: answer,
-                        correctAnswer: correctAnswer,
-                    });
+        if (answer === correctAnswer) {
+            score++;
+        } else {
+            incorrectAnswers.push({
+                question: quizData[currentQuestion].question,
+                incorrectAnswer: answer,
+                correctAnswer: correctAnswer,
+            });
 
-                    // Evidențiază răspunsul corect
-                    const options = document.getElementsByClassName('option');
-                    for (let i = 0; i < options.length; i++) {
-                        if (options[i].textContent === correctAnswer) {
-                            options[i].classList.add('correct-answer');
-                        }
-                    }
+            // Evidențiază răspunsul corect
+            const options = document.getElementsByClassName('option');
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].textContent === correctAnswer) {
+                    options[i].classList.add('correct-answer');
                 }
-
-                currentQuestion++;
-                selectedOption.checked = false;
-
-                // Așteaptă puțin înainte de a afișa următoarea întrebare pentru a evidenția răspunsul corect
-                setTimeout(() => {
-                    if (currentQuestion < quizData.length) {
-                        displayQuestion();
-                    } else {
-                        displayResult();
-                    }
-                }, 2000); // Așteaptă 2 secunde
             }
         }
 
-        function displayResult() {
-            quizContainer.style.display = 'none';
-            submitButton.style.display = 'none';
-            retryButton.style.display = 'inline-block';
-            showAnswerButton.style.display = 'inline-block';
-            resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
-        }
+        currentQuestion++;
+        selectedOption.checked = false;
 
-        function retryQuiz() {
-            currentQuestion = 0;
-            score = 0;
-            incorrectAnswers = [];
-            quizContainer.style.display = 'block';
-            submitButton.style.display = 'inline-block';
-            retryButton.style.display = 'none';
-            showAnswerButton.style.display = 'none';
-            resultContainer.innerHTML = '';
+        if (currentQuestion < quizData.length) {
             displayQuestion();
+        } else {
+            displayResult();
         }
+    }
+}
 
-        function showAnswer() {
-            quizContainer.style.display = 'none';
-            submitButton.style.display = 'none';
-            retryButton.style.display = 'inline-block';
-            showAnswerButton.style.display = 'none';
+function displayResult() {
+    quizContainer.style.display = 'none';
+    submitButton.style.display = 'none';
+    retryButton.style.display = 'inline-block';
+    showAnswerButton.style.display = 'inline-block';
+    resultContainer.innerHTML = `Ai obținut un scor de ${score} din ${quizData.length}!`;
+}
 
-            let incorrectAnswersHtml = '';
-            for (let i = 0; i < incorrectAnswers.length; i++) {
-                incorrectAnswersHtml += `
-                    <p>
-                        <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
-                        <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
-                        <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
-                    </p>
-                `;
-            }
+function retryQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    incorrectAnswers = [];
+    quizContainer.style.display = 'block';
+    submitButton.style.display = 'inline-block';
+    retryButton.style.display = 'none';
+    showAnswerButton.style.display = 'none';
+    resultContainer.innerHTML = '';
+    displayQuestion();
+}
 
-            resultContainer.innerHTML = `
-                <p>You scored ${score} out of ${quizData.length}!</p>
-                <p>Incorrect Answers:</p>
-                ${incorrectAnswersHtml}
-            `;
-        }
+function showAnswer() {
+    quizContainer.style.display = 'none';
+    submitButton.style.display = 'none';
+    retryButton.style.display = 'inline-block';
+    showAnswerButton.style.display = 'none';
 
-        submitButton.addEventListener('click', checkAnswer);
-        retryButton.addEventListener('click', retryQuiz);
-        showAnswerButton.addEventListener('click', showAnswer);
+    let incorrectAnswersHtml = '';
+    for (let i = 0; i < incorrectAnswers.length; i++) {
+        incorrectAnswersHtml += `
+            <p>
+                <strong>Întrebare:</strong> ${incorrectAnswers[i].question}<br>
+                <strong>Răspunsul tău:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
+                <strong>Răspunsul corect:</strong> ${incorrectAnswers[i].correctAnswer}
+            </p>
+        `;
+    }
 
-        displayQuestion();
-    </script>
+    resultContainer.innerHTML = `
+        <p>Ai obținut un scor de ${score} din ${quizData.length}!</p>
+        <p>Răspunsuri greșite:</p>
+        ${incorrectAnswersHtml}
+    `;
+}
+
+submitButton.addEventListener('click', checkAnswer);
+retryButton.addEventListener('click', retryQuiz);
+showAnswerButton.addEventListener('click', showAnswer);
+
+displayQuestion();
+            </script>
+            
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
